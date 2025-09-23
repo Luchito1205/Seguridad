@@ -28,7 +28,7 @@ line.pencolor("blue")
 line.penup()
 
 PLOT_WIDTH = 700
-PLOT_HEIGHT = 500   # más grande en Y
+PLOT_HEIGHT = 500  
 PLOT_X0 = -PLOT_WIDTH / 2
 PLOT_Y0 = -300
 
@@ -41,7 +41,7 @@ def map_x(attempts):
     return PLOT_X0 + (attempts / total_combinations) * PLOT_WIDTH
 
 def map_y(progress_frac):
-    # Parabólica más grande (doble escala en Y)
+
     return PLOT_Y0 + (progress_frac**2) * (PLOT_HEIGHT * 2)
 
 axis.penup()
@@ -95,4 +95,5 @@ for largo in range(1, 5):
                 index[i] = 0
         else:
             break
+
 
