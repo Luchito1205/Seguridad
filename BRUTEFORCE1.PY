@@ -13,7 +13,7 @@ tiempo_inicio = time.time()
 
 screen = turtle.Screen()
 screen.title("Gráfico de líneas parabólica: Fuerza Bruta")
-screen.setup(width=900, height=700)  # ventana más alta
+screen.setup(width=900, height=700) 
 screen.tracer(0)
 
 axis = turtle.Turtle()
@@ -23,8 +23,8 @@ axis.speed(0)
 line = turtle.Turtle()
 line.hideturtle()
 line.speed(0)
-line.width(4)          # línea aún más gruesa
-line.pencolor("blue")  # color visible
+line.width(4)        
+line.pencolor("blue") 
 line.penup()
 
 PLOT_WIDTH = 700
@@ -95,3 +95,4 @@ for largo in range(1, 5):
                 index[i] = 0
         else:
             break
+
